@@ -1,30 +1,28 @@
-
 Pod::Spec.new do |s|
+  s.name         = "FXLog"
+  s.version      = "1.0.0"
+  s.summary      = "日志框架"
 
-  s.name         = "WJLoggingCocoaLumberjack"
-  s.version      = "1.0"
-  s.summary      = "基于CocoaLumberjack对 WJLogging-API实现."
+  s.homepage     = "https://github.com/zqw87699/FXLog"
 
-
-  s.homepage     = "https://git.coding.net/halayun"
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
-  s.author             = { "吴云海" => "halayun@qq.com" }
+  s.author       = {"zhangdazong" => "929013100@qq.com"}
 
-  s.platform     = :ios, "5.0"
+  s.source       = { :git => "https://github.com/zqw87699/FXLog.git", :tag => "#{s.version}"}
 
-  s.source       = { :git => "http://gitlab.jucaicat.net/iOS-Framework/WJLogging-CocoaLumberjack.git", :tag => "#{s.version}" }
+  s.platform     = :ios, "7.0"
 
   s.source_files  = "Classes/*.{h,m}"
-  s.exclude_files = "Example"
 
   s.public_header_files = "Classes/*.h"
 
   s.frameworks = "Foundation", "UIKit"
 
+  s.module_name = 'FX' 
+
   s.requires_arc = true
 
-  s.dependency "CocoaLumberjack", "2.2.0"
-  s.dependency "WJLoggingAPI"
+  s.dependency "CocoaLumberjack", "~> 2.2.0"
 
 end

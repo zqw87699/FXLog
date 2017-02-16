@@ -15,12 +15,8 @@ pod FXLog
 配置方法
 
 ```objective-c
-1、程序启动处添加配置
--(BOOL)application:application didFinishLaunchingWithOptions:launchOptions
-    [FXLogFactory initLog];
 
-
-2、根据需求修改FXLogger.h文件中的全局日志级别,下面是默认配置，可根据自己需求修改
+1、根据需求修改FXLogger.h文件中的全局日志级别,下面是默认配置，可根据自己需求修改
 
 #ifdef DEBUG
 static const DDLogLevel ddLogLevel = DDLogLevelAll;
@@ -31,6 +27,6 @@ static const DDLogLevel ddLogLevel = DDLogLevelError;
 
 配置XcodeColor插件
 
-1、先安装插件XcodeColor
+1、先安装插件XcodeColor  
 2、工程中 "Edit Scheme" -> "Run" -> "Arguments" -> "Environment Variables"
 添加key：XcodeColors  value:YES

@@ -17,11 +17,12 @@
 static id<IFXLogger> logger = nil;
 
 +(id<IFXLogger>) getLogger {
-    dispatch_once_t once;
+    static dispatch_once_t once;
     dispatch_once(&once, ^{
         Class clazz = NSClassFromString(@"FXLogger");
         if (clazz) {
             if ([clazz conformsToProtocol:@protocol(IFXLogger)]) {
+                [self initLog];
                 logger = [[clazz alloc] init];
             } else {
                 NSString *reason = [NSString stringWithFormat:@"无法创建Logger,因为 FXLogger 没有实现协议IFXLogger"];

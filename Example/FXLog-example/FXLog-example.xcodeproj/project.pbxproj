@@ -15,6 +15,7 @@
 		1D85F8E11E5188390066B4ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D85F8DF1E5188390066B4ED /* LaunchScreen.storyboard */; };
 		1D85F8FE1E518C160066B4ED /* FXLogFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D85F8F91E518C160066B4ED /* FXLogFactory.m */; };
 		1D85F8FF1E518C160066B4ED /* FXLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D85F8FB1E518C160066B4ED /* FXLogger.m */; };
+		1D85F9781E5591C80066B4ED /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1D85F9771E5591C80066B4ED /* README.md */; };
 		DC5C8C82F1FD2943DD014762 /* libPods-FXLog-example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA257DE6629F2EDA48FAFF6 /* libPods-FXLog-example.a */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		1D85F8FB1E518C160066B4ED /* FXLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXLogger.m; sourceTree = "<group>"; };
 		1D85F8FC1E518C160066B4ED /* FXLogMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXLogMacros.h; sourceTree = "<group>"; };
 		1D85F8FD1E518C160066B4ED /* IFXLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFXLogger.h; sourceTree = "<group>"; };
+		1D85F9771E5591C80066B4ED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		4B6E523426B322DF41A497A4 /* Pods-FXLog-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FXLog-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FXLog-example/Pods-FXLog-example.release.xcconfig"; sourceTree = "<group>"; };
 		E6EC4D2F1C6B96A971DEB71E /* Pods-FXLog-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FXLog-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FXLog-example/Pods-FXLog-example.debug.xcconfig"; sourceTree = "<group>"; };
 		FFA257DE6629F2EDA48FAFF6 /* libPods-FXLog-example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FXLog-example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +57,7 @@
 		1D85F8C51E5188390066B4ED = {
 			isa = PBXGroup;
 			children = (
+				1D85F9771E5591C80066B4ED /* README.md */,
 				1D85F8F71E518C160066B4ED /* Classes */,
 				1D85F8D01E5188390066B4ED /* FXLog-example */,
 				1D85F8CF1E5188390066B4ED /* Products */,
@@ -248,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D85F9781E5591C80066B4ED /* README.md in Sources */,
 				1D85F8D91E5188390066B4ED /* ViewController.m in Sources */,
 				1D85F8FF1E518C160066B4ED /* FXLogger.m in Sources */,
 				1D85F8FE1E518C160066B4ED /* FXLogFactory.m in Sources */,

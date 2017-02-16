@@ -22,12 +22,6 @@ static id<IFXLogger> logger = nil;
         Class clazz = NSClassFromString(@"FXLogger");
         if (clazz) {
             if ([clazz conformsToProtocol:@protocol(IFXLogger)]) {
-#ifdef DEBUG
-                [DDLog addLogger:[DDTTYLogger sharedInstance] withLevel:DDLogLevelAll];
-                [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
-#else
-                [DDLog addLogger:[DDTTYLogger sharedInstance] withLevel:DDLogLevelError];
-#endif
                 logger = [[clazz alloc] init];
             } else {
                 NSString *reason = [NSString stringWithFormat:@"无法创建Logger,因为 FXLogger 没有实现协议IFXLogger"];
@@ -36,6 +30,15 @@ static id<IFXLogger> logger = nil;
         }
     });
     return logger;
+}
+
++(void)initLog{
+#ifdef DEBUG
+    [DDLog addLogger:[DDTTYLogger sharedInstance] withLevel:DDLogLevelAll];
+    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+#else
+    [DDLog addLogger:[DDTTYLogger sharedInstance] withLevel:DDLogLevelError];
+#endif
 }
 
 @end

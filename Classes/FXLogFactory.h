@@ -16,4 +16,9 @@
  */
 +(id<IFXLogger>) getLogger;
 
+/*
+ *  初始化
+ */
++(void)initLog;
+
 @end

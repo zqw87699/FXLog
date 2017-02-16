@@ -24,7 +24,7 @@
 #ifdef DEBUG
 static const DDLogLevel ddLogLevel = DDLogLevelAll;
 #else
-static const DDLogLevel ddLogLevel = DDLogLevelOff;
+static const DDLogLevel ddLogLevel = DDLogLevelError;
 #endif
 
 @interface FXLogger : NSObject<IFXLogger>

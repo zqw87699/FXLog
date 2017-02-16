@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FXLog"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "日志框架"
 
   s.homepage     = "https://github.com/zqw87699/FXLog"

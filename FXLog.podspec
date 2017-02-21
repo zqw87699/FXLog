@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FXLog"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "日志框架"
 
   s.homepage     = "https://github.com/zqw87699/FXLog"
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.frameworks = "Foundation", "UIKit"
 
-  s.module_name = 'FX' 
+  s.module_name = 'FXLog' 
 
   s.requires_arc = true
 
